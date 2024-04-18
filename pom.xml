@@ -101,9 +101,9 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-              <sonar.host.url>https://sonar-sonarqube-212.apps.ocp4.imss.com/</sonar.host.url>
-	      <sonar.login>sqa_be5df95f0aee40596a7336c9bf4c1c9122d10e25</sonar.login>
-              <sonar.projectName>narendra</sonar.projectName>
+              <sonar.host.url>http://sonarqube.sonarqube.svc.cluster.local:9000</sonar.host.url>
+	      <sonar.login>7c100799c3f81a6194fea909b132ee2a13feed37</sonar.login>
+              <sonar.projectName>Java-Sample</sonar.projectName>
               <sonar.projectVersion>master</sonar.projectVersion>
               <sonar.exclusions>**/*.java</sonar.exclusions>
             </properties>
