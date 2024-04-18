@@ -102,7 +102,7 @@
             </activation>
             <properties>
               <sonar.host.url>http://sonarqube.sonarqube.svc.cluster.local:9000</sonar.host.url>
-	      <sonar.login>07e7107bd5ea51176d02460ee6649a1d87f9346a</sonar.login>
+	      <sonar.login>7c100799c3f81a6194fea909b132ee2a13feed37</sonar.login>
               <sonar.projectName>Java-Sample</sonar.projectName>
               <sonar.projectVersion>master</sonar.projectVersion>
               <sonar.exclusions>**/*.java</sonar.exclusions>
