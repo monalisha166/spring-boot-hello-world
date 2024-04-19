@@ -15,14 +15,6 @@
         <relativePath/> 
     </parent>
 
-    <distributionManagement>
-      <repository>
-        <id>github</id>
-        <name>GitHub OWNER Apache Maven Packages</name>
-        <url>https://maven.pkg.github.com/narendralucky333/spring-boot-hello-world</url>
-      </repository>
-    </distributionManagement>
-
     <!--	
     <distributionManagement>
         <repository>
@@ -67,7 +59,7 @@
 	<dependency>
             <groupId>org.sonarsource.scanner.maven</groupId>
    	    <artifactId>sonar-maven-plugin</artifactId>
-            <version>3.9.1.2184</version>
+            <version>3.11.0.3922</version>
 	</dependency>
     </dependencies>
     
