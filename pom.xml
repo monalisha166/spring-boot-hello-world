@@ -104,13 +104,13 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
-            <properties>
-              <sonar.host.url>http://sonarqube.sonarqube.svc.cluster.local:9000</sonar.host.url>
-	      <sonar.login>7c100799c3f81a6194fea909b132ee2a13feed37</sonar.login>
-              <sonar.projectName>Java-Sample</sonar.projectName>
-              <sonar.projectVersion>master</sonar.projectVersion>
-              <sonar.exclusions>**/*.java</sonar.exclusions>
-            </properties>
+#            <properties>
+#              <sonar.host.url>http://sonarqube.sonarqube.svc.cluster.local:9000</sonar.host.url>
+#	      <sonar.login>7c100799c3f81a6194fea909b132ee2a13feed37</sonar.login>
+#              <sonar.projectName>Java-Sample</sonar.projectName>
+#              <sonar.projectVersion>master</sonar.projectVersion>
+#              <sonar.exclusions>**/*.java</sonar.exclusions>
+#            </properties>
         </profile>
         <profile>
             <id>coverage</id>
