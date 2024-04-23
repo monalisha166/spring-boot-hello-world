@@ -96,15 +96,15 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
-            <!--
+		
             <properties>
-              <sonar.host.url>http://sonarqube.sonarqube.svc.cluster.local:9000</sonar.host.url>
-	      <sonar.login>7c100799c3f81a6194fea909b132ee2a13feed37</sonar.login>
-              <sonar.projectName>Java-Sample</sonar.projectName>
+              <sonar.host.url>http://sonarqube-sonarqube.apps.ocp4.imss.work \</sonar.host.url>
+	      <sonar.login>a5e514f3d781aab7f3dd1239ef1f9d94fdf25a7d</sonar.login>
+              <sonar.projectName>java</sonar.projectName>
               <sonar.projectVersion>master</sonar.projectVersion>
               <sonar.exclusions>**/*.java</sonar.exclusions>
             </properties>
-	    -->
+
         </profile>
         <profile>
             <id>coverage</id>
