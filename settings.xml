@@ -1,25 +1,3 @@
-<settings>
-    <pluginGroups>
-        <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
-    </pluginGroups>
-    <profiles>
-        <profile>
-            <id>sonar</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <!-- Optional URL to server. Default value is http://localhost:9000 -->
-                <sonar.host.url>
-                  http://http://sonarqube.sonarqube.svc.cluster.local:9000
-                </sonar.host.url>
-            </properties>
-        </profile>
-     </profiles>
-</settings>
-
-
-<!--
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
@@ -39,7 +17,7 @@
         </repository>
         <repository>
           <id>github</id>
-          <url>https://maven.pkg.github.com/narendralucky333/spring-boot-hello-world</url>
+          <url>https://maven.pkg.github.com/monalisha166/spring-boot-hello-world</url>
           <snapshots>
             <enabled>true</enabled>
           </snapshots>
@@ -56,7 +34,7 @@
     </server>
   </servers>
 </settings>
--->
+
 
 <!--
 <?xml version="1.0" encoding="UTF-8"?>
