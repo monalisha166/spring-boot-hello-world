@@ -15,20 +15,20 @@
         <relativePath/> 
     </parent>
 
-    <!--	
-    <distributionManagement>
-        <repository>
-           <id>github</id>
-	    <name>narendralucky333</name>
-           <url>https://maven.pkg.github.com/narendralucky333/spring-boot-hello-world</url>
-        </repository>
-        <snapshotRepository>
-           <id>github</id>
-	    <name>narendralucky333</name>
-           <url>https://maven.pkg.github.com/narendralucky333/spring-boot-hello-world</url>
-        </snapshotRepository>
-    </distributionManagement>
-    -->
+   <distributionManagement>
+	<repository>
+		<id>devopsschool</id>
+		<name>Internal Releases</name>
+		<url>http://15.206.81.210:8081/repository/devopsschool-hosted-release/</url>
+	</repository>
+ 
+	<snapshotRepository>
+		<id>devopsschool</id>
+		<name>Internal Releases</name>
+		<url>http://15.206.81.210:8081/repository/devopsschool-hosted-snapshot/</url>
+	</snapshotRepository>
+
+</distributionManagement>
 	
     <properties>
         <java.version>11</java.version>
