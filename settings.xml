@@ -28,9 +28,11 @@
 
   <servers>
     <server>
-      <id>github</id>
-      <username>${{ secrets.GIT_USERNAME }}</username>
-      <password>${{ secrets.GIT_TOKEN }}</password>
+    <server>
+	<id>devopsschool</id>
+	<username>deploy-user</username>
+	<password>deploy-user123</password>
+</server>
     </server>
   </servers>
 </settings>
