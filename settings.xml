@@ -77,7 +77,7 @@
      <repositories>
        <repository>
          <id>devopsschool</id>
-         <name>admin</name>
+         <name>Internal Releases</name>
          <url>http://nexus-java-cicd.apps.cluster-s7cmb.s7cmb.sandbox2460.opentlc.com/repository/narendra-snapshot/</url>
        </repository>      
      </repositories>
@@ -88,7 +88,7 @@
      <repositories>
        <repository>
          <id>devopsschool</id>
-         <name>admin</name>
+         <name>Internal Releases</name>
          <url>http://nexus-nexus.apps.ocp4.imss.work/</url>
        </repository>
      </repositories>
