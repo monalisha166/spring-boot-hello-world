@@ -15,20 +15,29 @@
         <relativePath/> 
     </parent>
 
-   <distributionManagement>
-	<repository>
-		<id>devopsschool</id>
-		<name>Internal Releases</name>
-		<url>http://15.206.81.210:8081/repository/devopsschool-hosted-release/</url>
-	</repository>
- 
-	<snapshotRepository>
-		<id>devopsschool</id>
-		<name>Internal Releases</name>
-		<url>http://15.206.81.210:8081/repository/devopsschool-hosted-snapshot/</url>
-	</snapshotRepository>
+    <distributionManagement>
+      <repository>
+        <id>github</id>
+        <name>GitHub OWNER Apache Maven Packages</name>
+        <url>https://maven.pkg.github.com/monalisha166/spring-boot-hello-world</url>
+      </repository>
+    </distributionManagement>
 
-</distributionManagement>
+
+    <!--	
+    <distributionManagement>
+        <repository>
+           <id>github</id>
+	    <name>narendralucky333</name>
+           <url>https://maven.pkg.github.com/narendralucky333/spring-boot-hello-world</url>
+        </repository>
+        <snapshotRepository>
+           <id>github</id>
+	    <name>narendralucky333</name>
+           <url>https://maven.pkg.github.com/narendralucky333/spring-boot-hello-world</url>
+        </snapshotRepository>
+    </distributionManagement>
+    -->
 	
     <properties>
         <java.version>11</java.version>
@@ -59,7 +68,7 @@
 	<dependency>
             <groupId>org.sonarsource.scanner.maven</groupId>
    	    <artifactId>sonar-maven-plugin</artifactId>
-            <version>3.11.0.3922</version>
+            <version>3.9.1.2184</version>
 	</dependency>
     </dependencies>
     
@@ -82,11 +91,6 @@
                 <artifactId>jib-maven-plugin</artifactId>
                 <version>2.4.0</version>
             </plugin>
-	<plugin>
-        <groupId>org.sonarsource.scanner.maven</groupId>
-        <artifactId>sonar-maven-plugin</artifactId>
-        <version>3.11.0.3922</version>
-      </plugin>
         </plugins>
     </build>
 	
@@ -96,15 +100,13 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
-		
             <properties>
-              <sonar.host.url>http://sonarqube-sonarqube.apps.ocp4.imss.work \</sonar.host.url>
-	      <sonar.login>a5e514f3d781aab7f3dd1239ef1f9d94fdf25a7d</sonar.login>
-              <sonar.projectName>java</sonar.projectName>
+              <sonar.host.url>https://sonar-sonarqube-212.apps.ocp4.imss.com/</sonar.host.url>
+	      <sonar.login>sqa_be5df95f0aee40596a7336c9bf4c1c9122d10e25</sonar.login>
+              <sonar.projectName>narendra</sonar.projectName>
               <sonar.projectVersion>master</sonar.projectVersion>
               <sonar.exclusions>**/*.java</sonar.exclusions>
             </properties>
-
         </profile>
         <profile>
             <id>coverage</id>
@@ -138,8 +140,3 @@
         </profile>
     </profiles>
 </project>
-
-     
-
- 
- 
