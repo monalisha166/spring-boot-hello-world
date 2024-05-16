@@ -1,3 +1,42 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <activeProfiles>
+    <activeProfile>github</activeProfile>
+  </activeProfiles>
+
+  <profiles>
+    <profile>
+      <id>github</id>
+      <repositories>
+        <repository>
+          <id>central</id>
+          <url>https://repo1.maven.org/maven2</url>
+        </repository>
+        <repository>
+          <id>github</id>
+          <url>https://maven.pkg.github.com/monalisha166/spring-boot-hello-world</url>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
+
+  <servers>
+    <server>
+      <id>github</id>
+      <username>${{ secrets.GIT_USERNAME }}</username>
+      <password>${{ secrets.GIT_TOKEN }}</password>
+    </server>
+  </servers>
+</settings>
+
+
+<!--
 <?xml version="1.0" encoding="UTF-8"?>
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -7,18 +46,18 @@
   <proxies></proxies>
   <servers>
     <server>
-      <id>devopsschool</id>
-      <username>admin</username>
-      <password>nexusabc</password>
+      <id>narendra-snapshot</id>
+      <username>sumit</username>
+      <password>sumit</password>
     </server>
   </servers>
   
   
   <mirrors>
     <mirror>
-      <id>devopsschool</id>
+      <id>narendra-proxy</id>
       <mirrorOf>*</mirrorOf>
-      <url>http://nexus-nexus.apps.ocp4.imss.work/</url>
+      <url>http://nexus-java-cicd.apps.cluster-s7cmb.s7cmb.sandbox2460.opentlc.com/repository/narendra-proxy/</url>
     </mirror>
   </mirrors>
   <profiles>
@@ -36,8 +75,8 @@
      <id>snapshot</id>
      <repositories>
        <repository>
-         <id>devopsschool</id>
-         <name>Internal Releases</name>
+         <id>narendra-snapshot</id>
+         <name>your custom repo</name>
          <url>http://nexus-java-cicd.apps.cluster-s7cmb.s7cmb.sandbox2460.opentlc.com/repository/narendra-snapshot/</url>
        </repository>      
      </repositories>
@@ -47,9 +86,9 @@
      <id>release</id>
      <repositories>
        <repository>
-         <id>devopsschool</id>
-         <name>Internal Releases</name>
-         <url>http://nexus-nexus.apps.ocp4.imss.work/</url>
+         <id>narendra-snapshot</id>
+         <name>your custom repo</name>
+         <url>http://nexus-java-cicd.apps.cluster-s7cmb.s7cmb.sandbox2460.opentlc.com/repository/narendra-snapshot/</url>
        </repository>
      </repositories>
    </profile>
@@ -74,3 +113,4 @@
     </profile>
   </profiles>
 </settings>
+-->
