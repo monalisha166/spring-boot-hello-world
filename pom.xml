@@ -17,12 +17,12 @@
 	
   <distributionManagement>
         <repository>
-           <id>mona-snapshot</id>
+           <id>mona-hosted-snapshot</id>
 	    <name>monalisha166</name>
            <url>http://nexus-nexus.apps.ocp4.imss.work/repository/mona-hosted-snapshot</url>
         </repository>
         <snapshotRepository>
-           <id>mona-snapshot</id>
+           <id>mona-hosted-snapshot</id>
 	    <name>monalisha166</name>
            <url>http://nexus-nexus.apps.ocp4.imss.work/repository/mona-hosted-snapshot/</url>
         </snapshotRepository>
