@@ -14,30 +14,19 @@
         <version>2.1.6.RELEASE</version>
         <relativePath/> 
     </parent>
-
-    <distributionManagement>
-      <repository>
-        <id>github</id>
-        <name>GitHub OWNER Apache Maven Packages</name>
-        <url>https://maven.pkg.github.com/monalisha166/spring-boot-hello-world</url>
-      </repository>
-    </distributionManagement>
-
-
-    <!--	
-    <distributionManagement>
+	
+  <distributionManagement>
         <repository>
-           <id>github</id>
-	    <name>narendralucky333</name>
-           <url>https://maven.pkg.github.com/narendralucky333/spring-boot-hello-world</url>
+           <id>mona-snapshot</id>
+	    <name>monalisha166</name>
+           <url>http://nexus-nexus.apps.ocp4.imss.work/repository/mona-hosted-snapshot</url>
         </repository>
         <snapshotRepository>
-           <id>github</id>
-	    <name>narendralucky333</name>
-           <url>https://maven.pkg.github.com/narendralucky333/spring-boot-hello-world</url>
+           <id>mona-snapshot</id>
+	    <name>monalisha166</name>
+           <url>http://nexus-nexus.apps.ocp4.imss.work/repository/mona-hosted-snapshot/</url>
         </snapshotRepository>
     </distributionManagement>
-    -->
 	
     <properties>
         <java.version>11</java.version>
